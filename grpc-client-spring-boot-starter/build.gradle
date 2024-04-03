@@ -1,8 +1,7 @@
 plugins {
     id 'java-library'
+    id 'deploy'
 }
-
-apply from: '../deploy.gradle'
 
 group = 'net.devh'
 version = projectVersion

@@ -38,6 +38,7 @@ buildscript {
 plugins {
     id 'java'
     id 'java-library'
+    id 'deploy'
     id 'org.springframework.boot' version "${springBootVersion}" apply false
     id 'io.spring.dependency-management' version '1.1.4'
     id 'net.nemerosa.versioning' version "${versioningPluginVersion}"
@@ -253,8 +254,6 @@ allprojects { project ->
         }
     }
 }
-
-apply from: './deploy.gradle'
 
 group = 'net.devh'
 version = projectVersion

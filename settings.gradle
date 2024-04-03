@@ -1,3 +1,7 @@
+pluginManagement {
+    includeBuild("build-logic")
+}
+
 rootProject.name = 'grpc-spring-boot-starter'
 
 include "grpc-common-spring-boot"
